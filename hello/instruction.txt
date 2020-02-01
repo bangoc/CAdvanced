@@ -1,0 +1,19 @@
+Mục đích: Kiểm tra và làm quen với môi trường lập trình
+
+1. Viết code.
+Nhập lại nội dung hai tệp selection_sort.c và CMakeLists.txt
+!!Lưu ý: Không copy/paste.
+2. Biên dịch. Chạy các lệnh sau với thư mục dự án là thư mục hiện hành:
+  mkdir b
+  cd b
+  cmake .. -DCMAKE_BUILD_TYPE=Debug
+  make sort
+Tham khảo build.png
+3. Gỡ rối.
+Nhiệm vụ: Sử dụng trình gỡ rối để theo dõi các hoán đối giá trị trong quá trình chạy chương trình.
+Các bước thực hiện:
+  1. Chạy chương trình
+  2. Đặt breakpoint ở dòng 26
+        swap(&arr[i], &arr[min_index]);
+  3. Lặp theo dõi biến và tiếp tục cho tới khi kết thúc
+Tham khảo run.png, gdb.png, gdbgui.png
