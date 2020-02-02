@@ -1,25 +1,25 @@
-//sorting of array list using selection sort
+// sorting of array list using selection sort
 #include <stdio.h>
 
-void display(int arr[], int n){
+void display(int arr[], int n) {
   int i;
-  for(i = 0; i < n; i++){
+  for (i = 0; i < n; i++) {
     printf("%d ", arr[i]);
   }
   printf("\n");
 }
 
-void swap(int *first, int *second){
+void swap(int *first, int *second) {
   int temp = *first;
   *first = *second;
   *second = temp;
 }
 
-void selectionSort(int arr[], int size){
-  for(int i = 0; i < size; i++) {
+void selectionSort(int arr[], int size) {
+  for (int i = 0; i < size; i++) {
     int min_index = i;
-    for(int j = i+1; j < size; j++) {
-      if(arr[min_index] > arr[j]) {
+    for (int j = i + 1; j < size; j++) {
+      if (arr[min_index] > arr[j]) {
         min_index = j;
       }
     }
@@ -27,7 +27,7 @@ void selectionSort(int arr[], int size){
   }
 }
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[]) {
   int n;
   printf("Enter size of array:\n");
   scanf("%d", &n); // E.g. 8
@@ -35,8 +35,8 @@ int main(int argc, const char * argv[]) {
   printf("Enter the elements of the array\n");
   int i;
   int arr[n];
-  for(i = 0; i < n; i++){
-    scanf("%d", &arr[i] );
+  for (i = 0; i < n; i++) {
+    scanf("%d", &arr[i]);
   }
 
   printf("Original array: ");
