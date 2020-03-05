@@ -1,7 +1,7 @@
 # CAdvanced
-Resources for the CAdvanced course
+Tài nguyên học tập cho khóa CAdvanced
 
-Use the following command to clone with submodules:
+Nên sử dụng lệnh sau để tạo bản sao cùng với các mô-đun con:
 
 ```
 git clone --recurse-submodules https://github.com/bangoc/CAdvanced.git
