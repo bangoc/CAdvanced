@@ -1,0 +1,5 @@
+Bài 1.1
+Môi trường: Sử dụng thẻ lesson01.1
+
+Hãy viết một chương trình đọc từ một tệp văn bản n số nguyên, sắp xếp bằng Qsort, rồi in kết quả đã sắp xếp ra màn hình.
+Bạn có thể tự thiết kế định dạng tệp, tuy nhiên sử dụng giải thuật quick sort trong mylib là bắt buộc.
