@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "DebugPrintf/debug_printf.h"
 
 /*Displays the array, passed to this method*/
 void display(int arr[], int n)
@@ -27,12 +28,12 @@ void swap(int *first, int *second)
   and places each element which is less than the pivot value to its left
   and the elements greater than the pivot value to its right
   arr[] --- array to be partitioned
-  lower --- lower index 
+  lower --- lower index
   upper --- upper index
 */
 int partition(int arr[], int lower, int upper)
 {
-
+    printf("lower = %d  upper = %d\n", lower, upper);
     int i = (lower - 1);
 
     int pivot = arr[upper]; // Selects last element as the pivot value
