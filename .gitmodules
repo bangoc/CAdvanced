@@ -1,0 +1,3 @@
+[submodule "DebugPrintf"]
+	path = DebugPrintf
+	url = https://github.com/bangoc/DebugPrintf.git
