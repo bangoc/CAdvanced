@@ -2,7 +2,6 @@
 Tài nguyên học tập cho khóa CAdvanced
 
 Nên sử dụng lệnh sau để tạo bản sao cùng với các mô-đun con:
-
 ```
 git clone --recurse-submodules https://github.com/bangoc/CAdvanced.git
 ```
@@ -20,3 +19,7 @@ Một số lệnh làm việc với nhánh:
 source <đường dẫn tới thư mục bin>/set-log-level-none.sh
 source <đường dẫn tới thư mục bin>/set-log-level-all.sh
 ```
+
+Một số cách xem các thay đổi đã được thực hiện trong 1 commit:
+1. Sử dụng giao diện đồ họa tiêu chuẩn git-gui: ```sudo apt-get install git-gui``` sau đó chạy lệnh ```git gui``` hoặc ```gitk``` trong thư mục gốc của mã nguồn.
+2. Sử dụng meld ```git difftool -t meld --dir-diff <commit A> <commit B>```
