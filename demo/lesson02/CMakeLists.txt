@@ -1,0 +1,1 @@
+add_executable(demo_function_declarator function_declarator.c foo.c)
