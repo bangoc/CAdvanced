@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
-project(CAdvanced)
+project(CAdvanced C)
+set(CMAKE_C_STANDARD 99)
 add_subdirectory(DebugPrintf)
 include_directories(${CMAKE_SOURCE_DIR})
 add_executable(demo_debug_printf demo/environment/demo_debug_printf.c)
