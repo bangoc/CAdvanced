@@ -1,3 +1,6 @@
 [submodule "DebugPrintf"]
 	path = DebugPrintf
 	url = https://github.com/bangoc/DebugPrintf.git
+[submodule "libfdr"]
+	path = libfdr
+	url = https://github.com/bangoc/libfdr.git
