@@ -1,0 +1,4 @@
+Các nội dung
+1. Hàm khái quát
+2. Kiểu dữ liệu khái quát
+3. Tìm hiểu libfdr

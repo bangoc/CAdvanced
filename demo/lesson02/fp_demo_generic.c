@@ -1,0 +1,1 @@
+// triển khai khái quát của fp_demo
