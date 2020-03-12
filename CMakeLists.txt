@@ -8,3 +8,7 @@ target_link_libraries(demo_debug_printf debug_printf)
 add_library(mylib STATIC mylib/qsort.c)
 add_executable(qsort_demo resources/Quick_Sort.c)
 target_link_libraries(qsort_demo debug_printf mylib)
+
+add_subdirectory(libfdr)
+add_executable(jval_demo demo/lesson02/jval_demo.c)
+target_link_libraries(jval_demo fdr)
