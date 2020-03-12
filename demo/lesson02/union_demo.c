@@ -14,7 +14,7 @@ typedef union MyVal MyVal_t;
 int main() {
   // 1. Khai báo biến
   // union MyVal val;
-  // MyVal_t val;
+  // MyVal_t val2;
 
   // 2. Kiểm tra các kích thước kiểu
   // printf("sizeof(long) = %ld\n"
