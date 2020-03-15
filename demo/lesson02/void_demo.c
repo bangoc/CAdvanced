@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-void display_i(int i) {
-  printf("i = %d\n", i);
+void display_i(void* data) {
+  printf("i = %d\n", *(int*)data);
 }
 
-void display_d(double d) {
-  printf("d = %lf\n", d);
+void display_d(void* data) {
+  printf("d = %lf\n", *(double*)data);
 }
 
-void display_s(char *s) {
-  printf("s = %s\n", s);
+void display_s(void* data) {
+  printf("s = %s\n", (char*)data);
 }
 
 typedef enum {
@@ -18,17 +18,18 @@ typedef enum {
   string_tag
 } Tags;
 
+struct {
+  Tags tag;
+  void (*handler)(void*);
+} displays[] = {{int_tag, display_i}, {double_tag, display_d}, {string_tag, display_s}};
+
 void display(void *data, Tags tag) {
-  switch (tag) {
-    case int_tag:
-      display_i(*(int*)data);
+  int n = sizeof(displays)/sizeof(displays[0]);
+  for (int i = 0; i < n; ++i) {
+    if (tag == displays[i].tag) {
+      displays[i].handler(data);
       break;
-    case double_tag:
-      display_d(*(double*)data);
-      break;
-    case string_tag:
-      display_s((char*)data);
-      break;
+    }
   }
 }
 
