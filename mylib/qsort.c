@@ -1,13 +1,3 @@
-#include "DebugPrintf/debug_printf.h"
-
-/*Displays the array, passed to this method*/
-void display(int arr[], int n) {
-  int i;
-  for (i = 0; i < n; i++) {
-    printf("%d ", arr[i]);
-  }
-  printf("\n");
-}
 
 /*Swap function to swap two values*/
 void swap(int *first, int *second) {
