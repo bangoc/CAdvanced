@@ -13,8 +13,7 @@ int main(int argc, char* argv[]) {
 
   NamePhone2 tmp = {.name = "Nguyen Van A", .phone = "(+84) 977799999"};
   cvector_push_back(v_s2, tmp);  // ?
-  tmp.name = "Nguyen Thi B";
-  tmp.phone = "(+84) 987799999";
+  tmp = (NamePhone2){.name = "Nguyen Thi B", .phone = "(+84) 987799999"};
   cvector_push_back(v_s2, tmp);
   for (int i = 0; i < cvector_size(v_s2); ++i) {
     printfDebug("name: %s", v_s2[i].name);
@@ -22,9 +21,8 @@ int main(int argc, char* argv[]) {
   }
 
   char* danger = "Very dangerous";
-  tmp.name = (char*)malloc(strlen(danger) + 1);
+  tmp = (NamePhone2){.name = (char*)malloc(strlen(danger) + 1), .phone = "Don't know"};
   strcpy(tmp.name, danger);
-  tmp.phone = "Don't know";
   cvector_push_back(v_s2, tmp);
   for (int i = 0; i < cvector_size(v_s2); ++i) {
     printfDebug("name: %s", v_s2[i].name);
