@@ -12,3 +12,6 @@ add_executable(qsort_demo resources/Quick_Sort.c)
 target_link_libraries(qsort_demo debug_printf mylib)
 add_executable(jval_demo demo/lesson02/jval_demo.c)
 target_link_libraries(jval_demo fdr)
+
+add_executable(vector_demo demo/lesson03/vector_demo.c)
+target_link_libraries(vector_demo debug_printf)

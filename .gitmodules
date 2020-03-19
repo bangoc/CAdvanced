@@ -4,3 +4,6 @@
 [submodule "libfdr"]
 	path = libfdr
 	url = https://github.com/bangoc/libfdr.git
+[submodule "c-vector"]
+	path = c-vector
+	url = https://github.com/bangoc/c-vector.git

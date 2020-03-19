@@ -1,0 +1,13 @@
+
+1. Tóm tắt nội dung tuần trước
+
+2. Nội dung tuần này
+  + Lưu trữ tuần tự: kiểu vec-tơ
+    . dựa trên mảng
+    . giới hạn động
+  + Minh họa qua ứng dựng PhoneBook: phiên bản 1 - tra cứu tuần tự
+
+3. Kiến thức cơ bản cần thiết cho nội dung mới
+  + nắm vững các hàm quản lý bộ nhớ:
+        malloc, calloc, realloc, free (C99, 7.20.3)
+  + macro theo phong cách hàm (C99, 6.10.3)
