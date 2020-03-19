@@ -1,0 +1,24 @@
+1. Một số cách triển khai vec-tơ
+type*      vs     struct {
+                    size_t size;
+                    size_t capacity;
+                    type* entries;
+                  }
+
+2. Một số ràng buộc
+vec[cvector_size(vec)] = (value)
+
+struct {
+  char name[100];
+  char phone[20];
+} s1, s2;
+s1 = s2?
+
+
+struct {
+  char *name;
+  char *phone;
+} s1, s2;
+s1 = s2 ?
+-> Hàm hỗ trợ
+

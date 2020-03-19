@@ -11,5 +11,7 @@ int main() {
   for (int i = 0; i < cvector_size(v); ++i) {
     printfDebug("v[%d] = %d", i, v[i]);
   }
+
+  cvector_free(v);
   return 0;
 }

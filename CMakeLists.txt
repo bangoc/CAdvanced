@@ -15,3 +15,7 @@ target_link_libraries(jval_demo fdr)
 
 add_executable(vector_demo demo/lesson03/vector_demo.c)
 target_link_libraries(vector_demo debug_printf)
+add_executable(vector_demo2 demo/lesson03/vector_demo2.c)
+target_link_libraries(vector_demo2 debug_printf)
+add_executable(vector_demo3 demo/lesson03/vector_demo3.c)
+target_link_libraries(vector_demo3 debug_printf)

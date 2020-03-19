@@ -35,3 +35,6 @@ int count_if(int n, int a[], predicate_t p) {
   }
   return cc;
 }
+
+
+// Chi tiết -> Khái quát

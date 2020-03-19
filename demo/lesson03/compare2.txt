@@ -1,0 +1,13 @@
+3. Xử lý kiểu tự định nghĩa
+s1 = s2     vs    clone(&s1, &s2)      vs    move(&s1, &s2)
+
+type*                               vs      struct {
+type *clone(type*, type*);                    size_t size;
+type *move(type*, type*);                     size_t capacity;
+                                              type *entries;
+                                              type *(*clone)(type*, type*);
+                                              type *(*move)(type*, type*);
+                                            };
+
+
+! Chủ đề bài tiếp theo: Lưu trữ theo định dạng khóa/giá trị
