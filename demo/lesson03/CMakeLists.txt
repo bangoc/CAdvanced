@@ -1,0 +1,8 @@
+add_executable(vector_demo vector_demo.c)
+target_link_libraries(vector_demo debug_printf)
+add_executable(vector_demo2 vector_demo2.c)
+target_link_libraries(vector_demo2 debug_printf)
+add_executable(vector_demo3 vector_demo3.c)
+target_link_libraries(vector_demo3 debug_printf)
+add_executable(phone_book phone_book.c)
+target_link_libraries(phone_book debug_printf)
