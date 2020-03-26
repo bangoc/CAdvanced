@@ -21,3 +21,5 @@ add_executable(vector_demo3 demo/lesson03/vector_demo3.c)
 target_link_libraries(vector_demo3 debug_printf)
 add_executable(phone_book demo/lesson03/phone_book.c)
 target_link_libraries(phone_book debug_printf)
+
+add_subdirectory(demo/lesson04)
