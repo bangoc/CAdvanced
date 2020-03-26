@@ -1,0 +1,9 @@
+1. Tóm tắt nội dung bài 3
+
+Nội dung tuần này:
+  2. Triển khai khái quát danh sách móc nối kép trong libfdr
+  3. So sánh dllist và vector
+  4. Bài tập
+
+*Yêu cầu: Nắm vững các nội dung đã học
+          Không yêu cầu gì thêm về ngôn ngữ
