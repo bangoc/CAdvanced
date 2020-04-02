@@ -6,5 +6,9 @@ int main() {
   printfDebug("%p", p);
   printfDebug("%p", p->flink);
   printfDebug("%p", p->blink);
+
+  /*
+  Giải phóng bộ nhớ bằng cách nào?
+  */
   return 0;
 }

@@ -1,0 +1,10 @@
+Tóm tắt nội dung bài 4
+
+Nội dung tuần này:
+1. libfdr: fields
+2. libfdr: jrb
+3. So sánh các cấu trúc lưu trữ: vector, dllist, jrb
+4. Đồ án nhỏ: Giới thiệu B-Tree
+
+Yêu cầu: + Đọc tệp với FILE*
+         + Cây nhị phân tìm kiếm

@@ -1,0 +1,14 @@
+Phân tích sơ đồ gọi hàm với gprof
++ Biên dịch với khóa -pg
++ Chạy chương trình lần 1 để tạo ra gmon.out
++ Chạy chương trình lần 2 qua gprof trong cùng thư mục có gmon.out
+    gprof <app>
+    ví dụ: gprof ./p
+           gprof ./p | gprof2dot > test_insert.dot
+
+Phân tích bộ nhớ với valgrind
+  cơ bản: valgrind ./p
+hoặc
+  sử dụng massif:
+    valgrind --tool=massif
+    ms_print <massif output file>

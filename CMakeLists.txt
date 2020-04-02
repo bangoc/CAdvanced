@@ -1,10 +1,19 @@
 cmake_minimum_required(VERSION 2.8)
 project(CAdvanced C)
+option(GPROF_FLAG "Bổ xung khóa để sử dụng với gprof" OFF)
 set(CMAKE_C_STANDARD 99)
+if (NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE "Debug")
+endif (NOT CMAKE_BUILD_TYPE)
+
+if (GPROF_FLAG)
+  set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pg")
+endif (GPROF_FLAG)
+
 add_subdirectory(DebugPrintf)
 add_subdirectory(mylib)
 add_subdirectory(libfdr)
-include_directories(${CMAKE_SOURCE_DIR})
+include_directories(${CMAKE_SOURCE_DIR} ${CMAKE_SOURCE_DIR}/libfdr)
 
 add_executable(demo_debug_printf demo/environment/demo_debug_printf.c)
 target_link_libraries(demo_debug_printf debug_printf)
@@ -14,3 +23,5 @@ target_link_libraries(qsort_demo debug_printf mylib)
 add_subdirectory(demo/lesson02)
 add_subdirectory(demo/lesson03)
 add_subdirectory(demo/lesson04)
+add_subdirectory(demo/lesson05)
+
