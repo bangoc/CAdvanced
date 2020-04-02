@@ -1,3 +1,5 @@
 http://web.eecs.utk.edu/~jplank/plank/classes/cs360/360/notes/JRB/
 
 EOF: ctr+D
+
+http://www.hydrus.org.uk/doc/bt/html/index.html

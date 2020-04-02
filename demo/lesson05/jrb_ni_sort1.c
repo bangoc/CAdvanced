@@ -86,7 +86,7 @@ int main()
 
   jrb_traverse(tmp, t) {
     p = (Person *) tmp->val.v;
-    printf("%-40s %2d\n", p->name, p->score);
+    printf("%-40s %2d (%s)\n", p->name, p->score, tmp->key.s);
   }
   exit(0);
 }

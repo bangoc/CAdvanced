@@ -633,7 +633,7 @@ void checkBlack(Node* temp,int c){
 
 int main(){
     Node* root = newNode(1, NULL);
-    for (int i = 2; i <= 10; ++i) {
+    for (int i = 2; i <= 5; ++i) {
         insertNode(i, &root);
     }
     printInorder(root);
