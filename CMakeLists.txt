@@ -24,4 +24,4 @@ add_subdirectory(demo/lesson02)
 add_subdirectory(demo/lesson03)
 add_subdirectory(demo/lesson04)
 add_subdirectory(demo/lesson05)
-
+add_subdirectory(demo/lesson06)
