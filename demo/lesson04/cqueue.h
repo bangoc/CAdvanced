@@ -25,7 +25,8 @@ void queue_push(Queue, Jval);
 int queue_pop(Queue);
 Jval queue_front(Queue);
 Jval queue_back(Queue);
-size_t queue_empty(Queue);
+int queue_empty(Queue);
 void queue_free(Queue);
+size_t queue_size(Queue);
 
 #endif  // CQUEUE_H_
