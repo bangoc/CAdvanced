@@ -1,0 +1,29 @@
+Bài 6.1. Lưu trữ cố định: B Tree
+Cho tệp B-Tree lưu thông tin các khoản thanh toán theo định dạng khóa-giá trị (tải về một ví dụ, test.bt), trong đó:
+
+khóa: là các mã số duy nhất của mỗi khoản thanh toán (là số nguyên được lưu ở định dạng chuỗi), và
+
+giá trị: là dữ liệu của bản ghi tương ứng với khoản thanh toán đã được mã hóa theo định dạng chuỗi dài.
+
+Thông tin về khoản thanh toán được lưu trong bản ghi với cấu trúc như sau:
+
+typedef struct {
+    char *mo_ta;
+    int tong;
+} KhoanThanhToan;
+
+
+
+
+Tính tổng các khoản thanh toán
+
+Hãy viết chương trình đọc tệp B-Tree có tên là test.bt để tính tổng các khoản thanh toán và sau đó đưa kết quả ra màn hình.
+
+*Lưu ý:
+
+Chương trình chỉ in ra màn hình một số nguyên duy nhất là tổng các khoản thanh toán!.
+Sử dụng các tệp tiêu để của thư viện bt theo định dạng như trong bài giảng,
+ví dụ: #include "cmake-btree/inc/btree.h"
+Trong phiên bản mã hóa và giải mã chuỗi dài đơn giản, chúng ta giả sử các trường dữ liệu có kích thước tối là 255 bytes.
+(xem thêm bài 6.2 về mã hóa/giải mã kiểu Order)
+

@@ -1,0 +1,8 @@
+Bài 5.2. Hàng đợi (FIFO) dựa trên danh sách móc nối kép
+Hãy hoàn thiện phần triển khai cho giao diện cấu trúc hàng đợi được cho trong cqueue.h
+
+Bài toán đặt ra là triển khai trong cqueue.c (của bạn) phải vượt qua được các kiểm thử, tương tự như trong cqueue_t1.c
+
+*Gợi ý: Bạn có thể tải cqueue_t1.c về, thử biên dịch trước khi submit, nếu vượt qua các kiểm thử, chương trình sẽ in ra dòng chữ
+
+Test Ok!

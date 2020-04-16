@@ -1,0 +1,14 @@
+Bài 5.3. Tập hợp key/value dựa trên cấu trúc JRB
+Hãy hoàn thiện phần triển khai cho giao diện lưu trữ kiểu tập hợp được cho trong cjset.h
+
+Trong bài toán được đặt ra, triển khai cjset.c (của bạn) phải vượt qua được các kiểm thử tương tự như trong cjset_t1.c
+
+*Gợi ý: Nếu vượt qua hết các kiểm thử, chương trình sẽ in ra dòng chữ
+
+Test Ok!
+
+
+
+Triển khai của bạn
+
+Hãy gửi mã nguồn cjset.c của bạn vào đây:

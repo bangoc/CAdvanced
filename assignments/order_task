@@ -1,0 +1,19 @@
+Bài 6.2. Mã hóa và giải mã dữ liệu có cấu trúc
+Cho cấu trúc Order như sau:
+
+typedef struct {
+    char *name;
+    int total;
+} Order;
+Giả sử kích thước tối đa của các trường đều không vượt quá 255 bytes. Bài toán đặt ra là hãy viết các hàm mã hóa và giải mã cấu trúc Order để có thể làm việc được với các API sử dụng kiểu char* và len.
+
+Các API cần triển khai được cho trong order.h
+
+mã nguồn order.c của các bạn phải vượt qua được các kiểm thử tương tự như trong order_t1.c
+
+
+
+Triển khai giải thuật mã hóa và giải mã
+
+Mã nguồn tệp order.c của bạn:
+
