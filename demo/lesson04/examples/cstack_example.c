@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 #include "demo/lesson04/cstack.h"
 
 int main() {
