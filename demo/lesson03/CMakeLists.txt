@@ -1,3 +1,5 @@
+project(lesson03 C)
+
 add_executable(vector_demo vector_demo.c)
 target_link_libraries(vector_demo debug_printf)
 add_executable(vector_demo2 vector_demo2.c)

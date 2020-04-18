@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 2.8)
 project(CAdvanced C)
+cmake_minimum_required(VERSION 2.8)
 option(GPROF_FLAG "Bổ xung khóa để sử dụng với gprof" OFF)
 set(CMAKE_C_STANDARD 99)
 if (NOT CMAKE_BUILD_TYPE)

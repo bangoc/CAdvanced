@@ -1,3 +1,5 @@
+project(lesson04 C)
+
 add_executable(test_dllist test_dllist.c)
 target_link_libraries(test_dllist debug_printf fdr)
 

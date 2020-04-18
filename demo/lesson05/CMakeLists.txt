@@ -1,3 +1,5 @@
+project(lesson05 C)
+
 if (${CMAKE_SYSTEM_NAME} STREQUAL Linux)
   add_executable(jrb_strsort jrb_strsort.c)
   target_link_libraries(jrb_strsort fdr)
