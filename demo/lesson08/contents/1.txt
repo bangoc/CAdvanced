@@ -1,0 +1,11 @@
+Nội dung
+1. Duyệt tuần tự các phần tử trong cấu trúc lưu trữ
+    foreach (...) {
+      ...
+    }
+
+2. Gỡ rối từng dòng lệnh
+    Minh họa trên thư viện B Tree
+
+3. Biểu diễn và phân tích đồ thị
+    Biểu diễn ma trận kề, BFS, và một số khái niệm cơ bản

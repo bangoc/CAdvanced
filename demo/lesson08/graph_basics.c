@@ -11,7 +11,7 @@ void print_edges(igraph_vector_t *v) {
   printf("\n");
 }
 
-int main() {
+int main(int argc, char *argv[]) {
   igraph_t g;
   igraph_small(&g, 0, IGRAPH_DIRECTED,
                 0, 1,
@@ -25,6 +25,11 @@ int main() {
   igraph_get_edgelist(&g, &v, 0);
   printf("#elements of v: %li\n", igraph_vector_size(&v));
   print_edges(&v);
+
+  FILE *out = fopen(argc > 1? argv[1]: "graph_basics.dot", "w");;
+  igraph_write_graph_dot(&g, out);
+  fclose(out);
+
   igraph_vector_destroy(&v);
   igraph_destroy(&g);
 }
