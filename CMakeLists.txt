@@ -13,7 +13,6 @@ if (GPROF_FLAG)
 endif (GPROF_FLAG)
 
 add_subdirectory(DebugPrintf)
-add_subdirectory(mylib)
 add_subdirectory(libfdr)
 include_directories(${CMAKE_SOURCE_DIR} ${CMAKE_SOURCE_DIR}/libfdr)
 
@@ -27,8 +26,6 @@ endif (USE_IGRAPH)
 
 add_executable(demo_debug_printf demo/environment/demo_debug_printf.c)
 target_link_libraries(demo_debug_printf debug_printf)
-add_executable(qsort_demo resources/Quick_Sort.c)
-target_link_libraries(qsort_demo debug_printf mylib)
 
 add_subdirectory(demo/lesson02)
 add_subdirectory(demo/lesson03)
