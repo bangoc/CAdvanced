@@ -2,6 +2,7 @@ project(CAdvanced C)
 cmake_minimum_required(VERSION 2.8)
 option(GPROF_FLAG "Bổ xung khóa để sử dụng với gprof" OFF)
 option(USE_IGRAPH "Sử dụng igraph (xem hướng dẫn trong igraph.cmd)" OFF)
+option(BUILD_DEMO "Biên dịch các ví dụ minh họa" OFF)
 
 set(CMAKE_C_STANDARD 99)
 if (NOT CMAKE_BUILD_TYPE)
@@ -22,14 +23,15 @@ if (USE_IGRAPH)
   set(IGRAPH_LIBS igraph m)
 endif (USE_IGRAPH)
 
+if (BUILD_DEMO)
+  add_executable(demo_debug_printf demo/environment/demo_debug_printf.c)
+  target_link_libraries(demo_debug_printf debug_printf)
+  add_subdirectory(demo/lesson02)
+  add_subdirectory(demo/lesson03)
+  add_subdirectory(demo/lesson04)
+  add_subdirectory(demo/lesson05)
+  add_subdirectory(demo/lesson06)
+  add_subdirectory(demo/lesson08)
+endif (BUILD_DEMO)
+
 # codes which use igraph go below this line
-
-add_executable(demo_debug_printf demo/environment/demo_debug_printf.c)
-target_link_libraries(demo_debug_printf debug_printf)
-
-add_subdirectory(demo/lesson02)
-add_subdirectory(demo/lesson03)
-add_subdirectory(demo/lesson04)
-add_subdirectory(demo/lesson05)
-add_subdirectory(demo/lesson06)
-add_subdirectory(demo/lesson08)
