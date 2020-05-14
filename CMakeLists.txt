@@ -35,3 +35,4 @@ if (BUILD_DEMO)
 endif (BUILD_DEMO)
 
 # codes which use igraph go below this line
+add_subdirectory(stud)

@@ -1,0 +1,5 @@
+project(solutions C)
+if (USE_IGRAPH)
+  add_executable(is_dag is_dag_main.c)
+  target_link_libraries(is_dag ${IGRAPH_LIBS} debug_printf)
+endif (USE_IGRAPH)
