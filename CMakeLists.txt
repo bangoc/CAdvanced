@@ -2,7 +2,7 @@ project(CAdvanced C)
 cmake_minimum_required(VERSION 2.8)
 option(GPROF_FLAG "Bổ xung khóa để sử dụng với gprof" OFF)
 option(USE_IGRAPH "Sử dụng igraph (xem hướng dẫn trong igraph.cmd)" OFF)
-option(BUILD_DEMO "Biên dịch các ví dụ minh họa" OFF)
+option(BUILD_DEMO "Biên dịch các ví dụ minh họa" ON)
 
 set(CMAKE_C_STANDARD 99)
 if (NOT CMAKE_BUILD_TYPE)
