@@ -17,6 +17,10 @@ add_subdirectory(DebugPrintf)
 add_subdirectory(libfdr)
 include_directories(${CMAKE_SOURCE_DIR} ${CMAKE_SOURCE_DIR}/libfdr)
 
+if (EXISTS "${CMAKE_SOURCE_DIR}/binaries/libigraph.a")
+  set(USE_IGRAPH ON)
+endif ()
+
 if (USE_IGRAPH)
   add_library(igraph STATIC IMPORTED)
   set_target_properties(igraph PROPERTIES IMPORTED_LOCATION ${CMAKE_SOURCE_DIR}/binaries/libigraph.a)
