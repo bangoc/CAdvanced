@@ -1,0 +1,7 @@
+project(solutions C)
+if (USE_IGRAPH)
+  add_executable(bus bus.c)
+  foreach (app bus)
+    target_link_libraries(${app} ${IGRAPH_LIBS} debug_printf fdr)
+  endforeach (app)
+endif (USE_IGRAPH)
