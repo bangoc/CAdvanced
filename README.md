@@ -29,5 +29,4 @@ Một số cách xem các thay đổi đã được thực hiện trong 1 commit
 1. Sử dụng giao diện đồ họa tiêu chuẩn git-gui: ```sudo apt-get install git-gui``` sau đó chạy lệnh ```git gui``` hoặc ```gitk``` trong thư mục gốc của mã nguồn.
 2. Sử dụng meld ```git difftool -t meld --dir-diff <commit A> <commit B>```
 
-## Bài tập
-Các bài tập đi kèm được lưu riêng trong nhánh ```baitap``` (xem thư mục ```assignments```)
+[Điểm quá trình 2k9hk2](https://drive.google.com/drive/folders/1QLrrWtC9YwNs1UHvef5-zxCVPaitJLGV?usp=sharing)
